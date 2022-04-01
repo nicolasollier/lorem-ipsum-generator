@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700;800;900&display=swap');
+
+* {
+  font-family: 'Encode Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #fecafa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-center {
   display: flex;
+
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+
+  max-width: 1280px;
+  min-height: 100vh;
+  padding: 0 1.6rem;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.lorem-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  width: 100%;
+  max-width: 620px;
+  height: 140px;
+  margin-bottom: 30px;
+
+  padding: 0 1.4rem;
+  border-radius: 6px;
+  background-color: #ffebfd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lorem-form label {
+  font-size: 18px;
+  font-weight: 600;
+  height: fit-content;
+}
+
+.lorem-form input {
+  font-size: 18px;
+  font-weight: 800;
+  height: 26px;
+  padding: 1rem;
+  border-radius: 6px;
+  border: none;
+} 
+
+.main-title {
+  color: #2f4eda;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.lorem-text {
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+  padding: 0 1.4rem;
+  margin-bottom: 14vh;
 }
